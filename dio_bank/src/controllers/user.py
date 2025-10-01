@@ -40,7 +40,7 @@ def list_or_create_user():
         _create_user()
         return{"message": "User created successfully"}, HTTPStatus.CREATED
     else:
-        return{ "users": _list_users()}
+        return{"users": _list_users()}
 
 @app.route('/<int:user_id>')
 def get_user(user_id):
