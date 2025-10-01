@@ -1,19 +1,18 @@
-[project]
+[tool.poetry]
 name = "dio-bank"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "AAkwk",email = "aakawakitas12@gmail.com"}
-]
-readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-    "flask",
-    "flask-sqlalchemy",
-    "flask-migrate"
-]
+authors = ["AAkwk <aakawakitas12@gmail.com>"]
+package-mode = false
 
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "2.3.3"
+flask-sqlalchemy = "3.1.1"
+flask-migrate = "4.0.5"
+flask-jwt-extended = "4.5.3"
+jinja2 = "3.1.2"
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
